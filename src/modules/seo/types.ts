@@ -1,0 +1,1 @@
+// SEO module types will be defined here 

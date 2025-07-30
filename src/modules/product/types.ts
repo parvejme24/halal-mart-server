@@ -1,0 +1,1 @@
+// Product module types will be defined here 

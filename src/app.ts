@@ -18,7 +18,8 @@ import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
 
-
+// Route imports
+import authRoutes from './modules/auth/routes/authRoutes';
 
 // Middleware imports
 import { errorHandler } from './middleware/errorHandler';
@@ -106,6 +107,8 @@ app.get('/health', (req, res) => {
   });
 });
 
+// API routes
+app.use('/api/auth', authRoutes);
 
 // ===== ERROR HANDLING =====
 app.use(notFound);

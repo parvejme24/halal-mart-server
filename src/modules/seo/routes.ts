@@ -1,0 +1,1 @@
+// SEO routes will be defined here 
